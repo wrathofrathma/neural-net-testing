@@ -1,0 +1,29 @@
+First recombination of 2 neural networks with a 91+ % accuracy of predicting the mnist handwritten digits resulted in a recombination accuracy of 50%. The sub-networks were initialized with different weights.
+
+Second recombination of 2 neural networks with a 91+ % accuracy, intialized with the same weights and biases, but trained on different parts of subdata, resulted in 91+ % accuracy.
+
+Third recombination attempt of 100 neural networks with 79-85% accuracy, initialized with the same weights/biases, but trained on different parts of subdata, resulted in 88.5% accuracy.
+
+Recombining 200 neural networks with 2 sets of initialized weights(100 each), with accuracies between 79-86% each, resulted in a 78.3% accuracy
+
+Recombining 1000 neural networks on 1000 partitions of data of size 60 resulted in model accuracies of 55- 68%. Resulted in a neural network of 72.35% accuracy. So the accuracy went up?
+
+Recombining 100 neural networks with a deviation multiplier(the accuracy of the model's deviation from the highest in this case) on the recombination weights, resulted in a minor increase in accuracy
+run 1
+Average over 100: 0.8482
+Highest: 0.8669
+Naive recomb: 0.8661
+Dev recomb: 0.8665
+
+run 2(different weights)
+Highest: 0.8608
+Average: 0.839
+Naive recomb: 0.8456
+Dev of highest recomb: 0.8512
+Dev of average recomb: 0.8489
+
+Recombining 1000 neural networks with deviation from highest
+Average: 0.635
+Highest: 0.7391
+Recombination: 0.7747
+Truth model: 0.9199
